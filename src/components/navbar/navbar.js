@@ -23,9 +23,9 @@ class Navbar extends Component {
           </ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <NavLink to="#" className="nav-link">Total: $<span id="nav-total">0</span>
+              <NavLink to="#" className="nav-link">Total: ${this.props.total}<span id="nav-total"></span>
                 <i className="fas fa-shopping-cart"></i>
-                <span className="badge badge-pill badge-info" id="quantity">0</span>
+                <span className="badge badge-pill badge-info" id="quantity">{this.props.quantity}</span>
               </NavLink>
             </li>
           </ul>

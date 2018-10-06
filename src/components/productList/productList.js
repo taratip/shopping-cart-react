@@ -8,7 +8,7 @@ class ProductList extends Component {
     const productRows = rows.map( (row, idx) => this.props.products.slice(idx * 3, idx * 3 + 3) );
     const content = productRows.map((row, idx) => (
         <div className="row" key={idx}>
-          { row.map( product => <ProductItem key={product.id} title={product.name} price={product.price.toFixed(2)} description={product.description} id={product.id} product={product} /> )}
+          { row.map( product => <ProductItem key={product.id} title={product.name} price={product.price.toFixed(2)} description={product.description} id={product.id} addItem={this.props.addItem} product={product} /> )}
         </div> )
     );
 
