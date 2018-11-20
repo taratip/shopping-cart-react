@@ -8,7 +8,7 @@ class ProductItem extends Component {
       <div className="col-md-4">
         <div className="card">
           <div className="card-img-top">
-            <img className="card-img" src="http://placehold.it/250x250" alt="placeholder" />
+            <img className="card-img" src="http://source.unsplash.com/daily" alt="placeholder" />
           </div> {/* ends card img */}
           <div className="card-title">{this.props.title}</div>
           <div className="card-subtitle">${this.props.price}</div>
